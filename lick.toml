@@ -1,0 +1,11 @@
+[package]
+name = "fd"
+version = "10.4.2"
+description = "a simple, fast and user-friendly alternative to find"
+homepage = "https://github.com/vicvenscob/fd"
+license = "MIT"
+url = "https://github.com/vicvenscob/fd/archive/refs/heads/master.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/fd /usr/local/bin/fd"
+
+[package.files]
